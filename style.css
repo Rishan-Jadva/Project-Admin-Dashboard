@@ -2,3 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.sidebar{
+    display: grid;
+    grid-auto-rows: 50px;
+    padding-left: 20px;
+    background-color: #1992d4;
+}
+
+.sidebar p, .sidebar img{
+    display: inline;
+}
