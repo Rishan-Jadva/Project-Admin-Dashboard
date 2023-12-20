@@ -5,16 +5,48 @@
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1.25fr 3fr;
 }
 
 .sidebar{
     display: grid;
+    grid-template-rows: 100px;
     grid-auto-rows: 50px;
     padding-left: 20px;
-    background-color: #1992d4;
+    background-color: #ffe600;
 }
 
 .sidebar p, .sidebar img{
-    display: inline;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.side-title{
+    display: grid;
+    grid-template-columns: 75px auto;
+    align-items: center;
+}
+
+.side-tasks{
+    display: grid;
+    grid-template-columns: 75px auto;
+    align-items: center;
+}
+
+.side-title img{
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.side-title p{
+    font-size: larger;
+}
+
+.side-tasks img{
+    width: 25px;
+    display: block;
+    margin: 0 auto;
 }
