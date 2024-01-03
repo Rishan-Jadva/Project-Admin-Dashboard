@@ -9,7 +9,8 @@ img{
 
 .container{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
 }
 
 .sidebar{
@@ -47,6 +48,11 @@ img{
     width: 25px;
     display: block;
     margin: 0 auto;
+}
+
+.right{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
 }
 
 .greet-action{
@@ -133,8 +139,9 @@ img[alt="pfp"]{
     background-color: rgb(226, 226, 231);
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr;
     gap: 20px;
-    padding: 30px 10px;
+    padding: 30px 30px;
 }
 
 .main-content > p{
@@ -153,4 +160,90 @@ img[alt="pfp"]{
     border-radius: 15px;
     padding:15px;
     background-color: #ffffff;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.content-box img{
+    position: absolute;
+    bottom: 10px;
+}
+
+.fork{
+    right: 10px;
+}
+
+.eye{
+    right: 50px;
+}
+
+.star{
+    right: 90px;
+}
+
+.announcements{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+.announce-title{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.announce-desc{
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr{
+    margin: 15px 0;
+}
+
+.title{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.desc{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.announce-desc, .desc{
+    color: rgb(75, 75, 75);
+}
+
+.trend{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px 0;
+}
+
+.trend-box{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    gap: 25px;
+}
+
+.trend-box img{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.trend-content{
+    margin: auto 0;
+}
+
+.trend-subtitle{
+    color:rgb(75, 75, 75);
 }
